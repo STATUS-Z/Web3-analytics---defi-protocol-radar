@@ -1,0 +1,88 @@
+{
+  "dashboardId": 216253,
+  "name": "Protocol Signal Lab — DeFi Health Dashboard",
+  "url": "https://dune.com/za_chain/protocol-signal-lab-defi-health-dashboard",
+  "shippedAt": "2026-07-28T04:20:00Z",
+  "shipNote": "Copy ship: top banner + zone textWidgets + all query descriptions. Layout shifted +5 rows for banner. updateDashboard regenerates widgetIds every save — params need manual re-link.",
+  "insightModel": {
+    "name": "Health Index",
+    "scale": "0–100",
+    "formula": "health_index = ROUND(100 * PERCENT_RANK() OVER (ORDER BY sector_area), 0) where sector_area = SUM(protocol radar shoelace areas)",
+    "bands": {
+      "Weak": "0–24",
+      "Soft": "25–49",
+      "Strong": "50–74",
+      "Hot": "75–100"
+    },
+    "plainLanguage": "Where today's combined protocol radar strength ranks vs the last ~120 days."
+  },
+  "visualIntelligence": {
+    "pattern": "Protocol Health",
+    "story5s": "Which protocol is healthiest, and is the set Weak/Soft/Strong/Hot vs its own recent history?",
+    "zones": {
+      "filters": "Row 0 — date_snapshot, protocols, selected_protocol, time_offset, decomp_axis (widget router param removed)",
+      "banner": "Rows 1–5 top-of-page explainer (text widget 2287559)",
+      "crown": "Rows 6–19 radar; subtitle 20–21",
+      "scoreboard": "Row 22 — WHO LEADS / HEALTH INDEX / MOMENTUM / MARKET PULSE / ANOMALY",
+      "story": "Row 27 narrative; row 29 Rising/Softening + CURRENT BAND + AXIS LEADER; rows 33–42 HEALTH INDEX area",
+      "context": "Rows 33–42 decomp column",
+      "vault": "Rows 43–48 glossary; 49–50 audit note; 51–58 audit; 59 heartbeat"
+    }
+  },
+  "queries": {
+    "7995136": "Master radar — description updated",
+    "7995854": "Heartbeat — description updated",
+    "7997414": "KPI scoreboard — description updated",
+    "7997415": "Axis decomp — description updated",
+    "7997416": "Audit — description updated",
+    "7997418": "Anomaly — description updated",
+    "7997419": "Health Index timeline — description updated",
+    "8034055": "Trend + Health Band — description updated"
+  },
+  "copyFile": "psl-copy.md",
+  "visualizations": {
+    "11980819": "RADAR",
+    "11982551": "WHO LEADS",
+    "11982547": "HEALTH INDEX counter",
+    "11982546": "MOMENTUM",
+    "11982549": "MARKET PULSE",
+    "11982550": "ANOMALY",
+    "12019062": "7D TREND (Rising/Softening)",
+    "12122499": "CURRENT BAND",
+    "11982552": "HEALTH INDEX area + band thresholds",
+    "12019063": "AXIS LEADER",
+    "11982548": "ASSET DECOMP",
+    "11982553": "AUDIT",
+    "11980873": "HEARTBEAT"
+  },
+  "liveWidgetIdsAfterCopyShip": {
+    "banner": 2287559,
+    "crownSubtitle": 2287560,
+    "storySubtitle": 2287561,
+    "glossary": 2287562,
+    "vaultNote": 2287563,
+    "radar": 2287564,
+    "whoLeads": 2287565,
+    "healthIndexCounter": 2287566,
+    "momentum": 2287567,
+    "marketPulse": 2287568,
+    "anomaly": 2287569,
+    "trend7d": 2287570,
+    "currentBand": 2287571,
+    "axisLeader": 2287572,
+    "healthIndexChart": 2287573,
+    "decomp": 2287574,
+    "audit": 2287575,
+    "heartbeat": 2287576,
+    "note": "Param widgets still reference prior-generation IDs. Re-link in UI to radar 2287564 and decomp 2287574."
+  },
+  "seriesColorsManual": {
+    "fill_weak": "#DC3545",
+    "fill_soft": "#FD7E14",
+    "fill_strong": "#0DCAF0",
+    "fill_hot": "#19FF85",
+    "health_index": "#FFFFFF",
+    "decompAccent": "#FD7E14"
+  },
+  "chartEncoding": "stacked area fills (4×25) on left = band regions; health_index on right axis"
+}

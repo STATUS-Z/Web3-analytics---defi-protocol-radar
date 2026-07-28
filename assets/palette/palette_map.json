@@ -1,0 +1,117 @@
+{
+  "scrapedAt": "2026-07-27T06:45:00Z",
+  "sources": {
+    "homepage": "https://web3.career/",
+    "stylesheet": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css"
+  },
+  "rankedHomepagePalette": {
+    "background": {
+      "hex": "#0D0208",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css (dark table/active bg)"
+    },
+    "text": {
+      "hex": "#D5D3D3",
+      "source": "https://web3.career/ homepage.html + https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-white"
+    },
+    "primary_accent_cta": {
+      "hex": "#E6007A",
+      "source": "https://web3.career/ homepage.html + https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-primary/--bs-pink"
+    },
+    "secondary_accent": {
+      "hex": "#6D013A",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-secondary"
+    },
+    "success": {
+      "hex": "#00CD70",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-success"
+    },
+    "success_bright": {
+      "hex": "#19FF85",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-green"
+    },
+    "warning": {
+      "hex": "#FFC107",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-warning/--bs-yellow"
+    },
+    "info_cyan": {
+      "hex": "#0DCAF0",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-info/--bs-cyan"
+    },
+    "danger": {
+      "hex": "#DC3545",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-danger/--bs-red"
+    },
+    "indigo": {
+      "hex": "#6610F2",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-indigo"
+    },
+    "muted_gray": {
+      "hex": "#9C9A9B",
+      "source": "https://web3.career/ homepage.html"
+    },
+    "border": {
+      "hex": "#6B6569",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css"
+    }
+  },
+  "pslRoleMap": {
+    "Uniswap": {
+      "hex": "#0DCAF0",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-cyan/--bs-info"
+    },
+    "Aave": {
+      "hex": "#FFC107",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-yellow/--bs-warning"
+    },
+    "Lido": {
+      "hex": "#6610F2",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-indigo"
+    },
+    "Maker": {
+      "hex": "#00CD70",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-success"
+    },
+    "Curve": {
+      "hex": "#E6007A",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-primary/--bs-pink"
+    },
+    "SECTOR AVERAGE": {
+      "hex": "#9C9A9B",
+      "source": "https://web3.career/ homepage.html muted gray"
+    },
+    "Bull / STEADY / UP / IMPROVING": {
+      "hex": "#19FF85",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-green"
+    },
+    "Bear / SPIKE / DOWN / DECLINING": {
+      "hex": "#DC3545",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-danger"
+    },
+    "MARKET LEAD": {
+      "hex": "#0DCAF0",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-cyan"
+    },
+    "COMPOSITE HEALTH": {
+      "hex": "#FFC107",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-warning"
+    },
+    "VOLATILITY PULSE": {
+      "hex": "#6610F2",
+      "source": "https://web3.career/assets/application-1414c831c71057bb9dc9ef836b4eb0b3ae5c3f510e64993328fff039642a37a5.css --bs-indigo"
+    }
+  },
+  "replacedNeons": {
+    "#00FFF9": "#0DCAF0",
+    "#FFEA00": "#FFC107",
+    "#AA33FF": "#6610F2",
+    "#39FF14": "#19FF85",
+    "#FF2D6A": "#E6007A",
+    "#FF1744": "#DC3545",
+    "#7B8FA6": "#9C9A9B",
+    "#00E5FF": "#0DCAF0",
+    "#F5B342": "#FFC107",
+    "#A855F7": "#6610F2",
+    "#34D399": "#00CD70",
+    "#F87171": "#E6007A"
+  }
+}
