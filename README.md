@@ -27,7 +27,7 @@ It does **not** invent TVL leaderboards or Twitter narratives. It builds an eigh
 | **Scoreboard** | Who Leads · Health Index · Momentum · Market Pulse · Anomaly | Plain-language headlines (e.g. `68 · Strong`, `Rising`, `Calm`, `STEADY`) |
 | **Story** | Rising/Softening · Current band · Health Index over time | Is the *set* getting healthier? Where does today sit in Weak/Soft/Strong/Hot? |
 | **Context** | One-axis bar chart | Why the Crown looks that way — pick Liquidity, Whale, etc. |
-| **Vault** | Glossary · Audit matrix · Heartbeat | Definitions, raw 0–1 scores, chain freshness |
+| **Vault** | Glossary · Audit matrix · Heartbeat | Definitions, raw 0–1 scores, chain tip as **Last block · Queried · Freshness** |
 
 **Health Index bands (fixed):**
 

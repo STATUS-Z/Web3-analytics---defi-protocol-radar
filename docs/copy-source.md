@@ -1,6 +1,6 @@
-# Protocol Signal Lab — Final Copy (2026-07-28)
+# Protocol Signal Lab / DeFi Protocol Radar — Copy (synced 2026-07-30)
 
-Dashboard: https://dune.com/za_chain/protocol-signal-lab-defi-health-dashboard  
+Dashboard: https://dune.com/za_chain/defi-protocol-radar-1  
 ID: **216253**
 
 Tone: Visual Intelligence (Crown → Scoreboard → Story → Context → Vault) + anti-slop.  
@@ -11,8 +11,8 @@ Audience: curious DeFi readers + serious capital. No crypto fluff.
 ## Top-of-page banner (text widget)
 
 ```markdown
-### Protocol Signal Lab
-Compare Uniswap, Aave, Lido, Maker, and Curve on one screen — for curious readers and serious capital.
+### Protocol Radar 
+Compare Uniswap, Aave, Lido, Maker, and Curve on one screen — for curious readers and serious capital. 8 metrics, ghost trails, anomaly detection, more.
 
 **Health Index (0–100)** = where today’s combined radar strength ranks vs the last ~120 days.
 **Bands:** Weak 0–24 · Soft 25–49 · Strong 50–74 · Hot 75–100.
@@ -23,10 +23,12 @@ Compare Uniswap, Aave, Lido, Maker, and Curve on one screen — for curious read
 3. **Story** — Rising or Softening? Which band? Index over time
 4. **Context** — One axis, bar by bar (why the Crown looks that way)
 5. **Vault** — Glossary, audit scores, data heartbeat
+
+**_Keep your sidebar collapsed for the true view. Dark mode recommended._**
 ```
 
-Position: `row 1, col 0, sizeX 6, sizeY 5` (filters stay row 0; Crown radar shifts down).  
-Live text widget ID after ship: **2287559**.
+Position: `row 0, col 0, sizeX 6, sizeY 5` (filters on **row 5**; Crown radar from row 6).  
+Live text widget ID: **2287559**.
 
 ---
 
@@ -72,7 +74,7 @@ Live text widget ID after ship: **2287559**.
 | Query ID | Name | Description |
 |----------|------|-------------|
 | **7995136** | Master Data Pipeline | Eight-axis radar for Uniswap, Aave, Lido, Maker, Curve. Larger polygons = stronger. Gray = sector average. Ghosts = 7/30/90d ago. Powers The Crown. |
-| **7995854** | Chain Sync Status | Freshness check. Latest Ethereum block + when this page last queried. Higher block = newer data. |
+| **7995854** | Chain Sync Status | Freshness check. Three short fields: last Ethereum block, query time, FRESH/OK/LAG. Higher block = newer chain tip. |
 | **7997414** | Health Scoreboard | Scoreboard in plain words: Who Leads, Health Index (0–100 · Weak/Soft/Strong/Hot), Momentum Rising/Softening, Market Pulse Calm/Mixed/Stressed. |
 | **7997415** | Axis Breakdown | One axis at a time. Bars rank protocols on Liquidity, Efficiency, Revenue, Users, Health, Stickiness, Momentum, or Whale. Pick the axis in filters — Context zone. |
 | **7997416** | Protocol Audit Matrix | Vault table. Relative strength 0–1 for every protocol × every axis on the snapshot day. Highest in a column wins that metric. |

@@ -2,7 +2,7 @@
 
 Filenames: `{duneQueryId}-{slug}.sql`
 
-Synced from Dune + local Protocol Signal Lab drafts (2026-07-28).
+Synced from live Dune (last pull **2026-07-30**). Heartbeat uses short table columns (`last_block`, `queried`, `freshness`).
 
 | File | Query | Open |
 |------|-------|------|

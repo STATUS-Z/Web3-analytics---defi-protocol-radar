@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-28T04:42:00Z",
+  "fetchedAt": "2026-07-30T05:17:00Z",
   "source": "user-dune MCP getDashboard",
   "dashboardId": 216253,
   "name": "DeFi Protocol Radar #1 — Uniswap, Aave, Lido, Maker, Curve",
@@ -7,73 +7,31 @@
   "isPrivate": false,
   "tags": ["defi"],
   "dashboardUrl": "https://dune.com/za_chain/defi-protocol-radar-1",
-  "owner": {
-    "type": "team",
-    "id": 62197,
-    "handle": "za_chain",
-    "name": "ZA CHAIN ANALYTICS"
-  },
-  "insightModel": {
-    "name": "Health Index",
-    "scale": "0–100",
-    "formula": "health_index = ROUND(100 * PERCENT_RANK() OVER (ORDER BY sector_area), 0) where sector_area = SUM(protocol radar shoelace areas)",
-    "bands": {
-      "Weak": "0–24",
-      "Soft": "25–49",
-      "Strong": "50–74",
-      "Hot": "75–100"
-    }
-  },
-  "zones": {
-    "filters": "Row 0 — date_snapshot, decomp_axis, protocols, selected_protocol, time_offset, widget",
-    "banner": "Rows 1–5 — text widget 2287559",
-    "crown": "Rows 6–19 radar (2287564 / viz 11980819); subtitle rows 20–21 (2287560)",
-    "scoreboard": "Row 22 — WHO LEADS / HEALTH INDEX / MOMENTUM / MARKET PULSE / ANOMALY",
-    "story": "Row 27 narrative; row 29 Rising/Softening + CURRENT BAND + AXIS LEADER; rows 33–42 HEALTH INDEX chart",
-    "context": "Rows 33–42 decomp column (2287574)",
-    "vault": "Rows 43–48 glossary; 49–50 audit note; 51–58 audit; 59 heartbeat"
+  "ownerHandle": "za_chain",
+  "layoutNotes": {
+    "filters": "Row 5 — date_snapshot, decomp_axis, protocols, selected_protocol, time_offset, widget (all attached to 7995136 / radar 2287564)",
+    "banner": "Rows 0–4 text 2287559",
+    "crown": "Rows 6–19 radar 2287564 / viz 11980819; subtitle rows 20–21 2287560",
+    "scoreboard": "Row 22 counters",
+    "story": "Rows 27–28 subtitle; 29 badges; 33–42 Health Index + decomp",
+    "vault": "Rows 43–44 audit note; 45–52 audit; 53–56 glossary; 57–60 heartbeat table"
   },
   "queries": {
-    "7995136": {
-      "name": "Protocol Signal Lab — Master Data Pipeline",
-      "role": "Crown radar (+ legacy widget router)",
-      "vizIds": ["11980819"]
-    },
+    "7995136": { "name": "Master Data Pipeline", "version": 33, "role": "Crown radar" },
     "7995854": {
-      "name": "Protocol Signal Lab — Chain Sync Status",
+      "name": "Chain Sync Status",
+      "version": 7,
       "role": "Vault heartbeat",
-      "vizIds": ["11980873"]
+      "vizIds": ["11980873"],
+      "columns": ["last_block", "queried", "freshness"],
+      "vizType": "table"
     },
-    "7997414": {
-      "name": "Protocol Signal Lab — Health Scoreboard",
-      "role": "Scoreboard counters",
-      "vizIds": ["11982551", "11982547", "11982546", "11982549"]
-    },
-    "7997415": {
-      "name": "Protocol Signal Lab — Axis Breakdown",
-      "role": "Context bars + AXIS LEADER",
-      "vizIds": ["11982548", "12019063"]
-    },
-    "7997416": {
-      "name": "Protocol Signal Lab — Protocol Audit Matrix",
-      "role": "Vault audit table",
-      "vizIds": ["11982553"]
-    },
-    "7997418": {
-      "name": "Protocol Signal Lab — Volatility Sentinel",
-      "role": "Scoreboard anomaly",
-      "vizIds": ["11982550"]
-    },
-    "7997419": {
-      "name": "Protocol Signal Lab — Health Index Timeline",
-      "role": "Story Health Index chart",
-      "vizIds": ["11982552"]
-    },
-    "8034055": {
-      "name": "Protocol Signal Lab — Trend + Health Band",
-      "role": "Story badges Rising/Softening + CURRENT BAND",
-      "vizIds": ["12019062", "12122499"]
-    }
+    "7997414": { "name": "Health Scoreboard", "version": 14, "role": "Scoreboard counters" },
+    "7997415": { "name": "Axis Breakdown", "version": 11, "role": "Context bars + AXIS LEADER" },
+    "7997416": { "name": "Protocol Audit Matrix", "version": 10, "role": "Vault audit" },
+    "7997418": { "name": "Volatility Sentinel", "version": 12, "role": "Anomaly counter" },
+    "7997419": { "name": "Health Index Timeline", "version": 10, "role": "Story Health Index" },
+    "8034055": { "name": "Trend + Health Band", "version": 7, "role": "Story badges" }
   },
   "visualizationWidgets": [
     {"widgetId": 2287564, "visualizationId": 11980819, "zone": "crown", "label": "RADAR", "position": {"col": 0, "row": 6, "sizeX": 6, "sizeY": 14}},
@@ -87,35 +45,29 @@
     {"widgetId": 2287572, "visualizationId": 12019063, "zone": "story", "label": "AXIS LEADER", "position": {"col": 4, "row": 29, "sizeX": 2, "sizeY": 4}},
     {"widgetId": 2287573, "visualizationId": 11982552, "zone": "story", "label": "HEALTH INDEX chart", "position": {"col": 0, "row": 33, "sizeX": 4, "sizeY": 10}},
     {"widgetId": 2287574, "visualizationId": 11982548, "zone": "context", "label": "ASSET DECOMP", "position": {"col": 4, "row": 33, "sizeX": 2, "sizeY": 10}},
-    {"widgetId": 2287575, "visualizationId": 11982553, "zone": "vault", "label": "AUDIT", "position": {"col": 0, "row": 51, "sizeX": 6, "sizeY": 8}},
-    {"widgetId": 2287576, "visualizationId": 11980873, "zone": "vault", "label": "HEARTBEAT", "position": {"col": 0, "row": 59, "sizeX": 6, "sizeY": 3}}
+    {"widgetId": 2287575, "visualizationId": 11982553, "zone": "vault", "label": "AUDIT", "position": {"col": 0, "row": 45, "sizeX": 6, "sizeY": 8}},
+    {"widgetId": 2287576, "visualizationId": 11980873, "zone": "vault", "label": "HEARTBEAT", "position": {"col": 0, "row": 57, "sizeX": 6, "sizeY": 4}}
   ],
   "textWidgets": [
-    {"widgetId": 2287559, "role": "banner", "position": {"col": 0, "row": 1, "sizeX": 6, "sizeY": 5}},
+    {"widgetId": 2287559, "role": "banner", "position": {"col": 0, "row": 0, "sizeX": 6, "sizeY": 5}},
     {"widgetId": 2287560, "role": "crown_subtitle", "position": {"col": 0, "row": 20, "sizeX": 6, "sizeY": 2}},
     {"widgetId": 2287561, "role": "story_subtitle", "position": {"col": 0, "row": 27, "sizeX": 6, "sizeY": 2}},
-    {"widgetId": 2287562, "role": "glossary", "position": {"col": 0, "row": 43, "sizeX": 6, "sizeY": 6}},
-    {"widgetId": 2287563, "role": "vault_note", "position": {"col": 0, "row": 49, "sizeX": 6, "sizeY": 2}}
+    {"widgetId": 2287563, "role": "vault_note", "position": {"col": 0, "row": 43, "sizeX": 6, "sizeY": 2}},
+    {"widgetId": 2287562, "role": "glossary", "position": {"col": 0, "row": 53, "sizeX": 6, "sizeY": 4}}
   ],
   "paramWidgets": [
-    {"key": "date_snapshot", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 0, "row": 0}},
-    {"key": "decomp_axis", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 1, "row": 0}, "note": "Should attach to query 7997415 / widget 2287574 for Context bars"},
-    {"key": "protocols", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 2, "row": 0}},
-    {"key": "selected_protocol", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 3, "row": 0}},
-    {"key": "time_offset", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 4, "row": 0}},
-    {"key": "widget", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 5, "row": 0}, "note": "Legacy master-router param; preferred UI hides or removes this"}
+    {"key": "date_snapshot", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 0, "row": 5}},
+    {"key": "decomp_axis", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 1, "row": 5}, "note": "Shared name also drives 7997415 panels when that query declares the param"},
+    {"key": "protocols", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 2, "row": 5}},
+    {"key": "selected_protocol", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 3, "row": 5}},
+    {"key": "time_offset", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 4, "row": 5}},
+    {"key": "widget", "queryId": 7995136, "visualizationWidgetId": 2287564, "position": {"col": 5, "row": 5}, "note": "Legacy master-router param; preferred UI hides or removes this"}
   ],
-  "seriesColorsManual": {
-    "fill_weak": "#DC3545",
-    "fill_soft": "#FD7E14",
-    "fill_strong": "#0DCAF0",
-    "fill_hot": "#19FF85",
-    "health_index": "#FFFFFF",
-    "decompAccent": "#FD7E14"
-  },
-  "knownManualSteps": [
-    "Re-link decomp_axis to query 7997415 and widget 2287574",
-    "Remove or hide leftover widget router param if unused by Crown viz",
-    "Set HEALTH INDEX chart series colors in Dune UI (MCP cannot set hex)"
+  "recentLiveUpdates": [
+    "Heartbeat SQL: last_block / queried / freshness (short columns)",
+    "Heartbeat viz 11980873: table (not long-string counter)",
+    "Banner: Protocol Radar title + sidebar collapsed / dark mode tip",
+    "Filters moved to row 5 under banner",
+    "Glossary compacted to rows 53–56; heartbeat rows 57–60 sizeY 4"
   ]
 }
