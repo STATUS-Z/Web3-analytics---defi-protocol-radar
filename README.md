@@ -1,7 +1,6 @@
 # DeFi Protocol Radar
 
-**Live:** [dune.com/za_chain/defi-protocol-radar-1](https://dune.com/za_chain/defi-protocol-radar-1)  
-**Dashboard ID:** `216253` · **Owner:** `za_chain` (ZA CHAIN ANALYTICS) · **Public**
+**Live:** [dune.com/za_chain/defi-protocol-radar-1](https://dune.com/za_chain/defi-protocol-radar-1)  **Dashboard ID:** `216253`
 
 Compare **Uniswap, Aave, Lido, Maker, and Curve** on one screen — eight axes, ghost trails, a 0–100 Health Index, and an audit vault. Built for curious readers and serious capital. No crypto fluff.
 
