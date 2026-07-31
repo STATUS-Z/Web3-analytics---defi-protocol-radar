@@ -51,3 +51,10 @@ Attached to query **7995136** / viz widget **2287564** (filter row **5**):
 ## Machine-readable
 
 `docs/live-dashboard-snapshot.json`
+
+
+## Mirror link (2026-07-30)
+
+↔ [DeFi Protocol Deep Dive](https://dune.com/za_chain/defi-protocol-deep-dive) · ID **217278** · embed `8168880/12161723`
+
+See `docs/linker-notes.md`. After API layout saves, re-link params (widget IDs regenerate).
