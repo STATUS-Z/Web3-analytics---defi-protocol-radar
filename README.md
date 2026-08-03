@@ -120,8 +120,3 @@ Full fork notes: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 Proxy metrics (fees, TVL heuristics) are documented in SQL headers. Treat scores as **relative** within the selected set, not absolute USD truth.
 
----
-
-## License
-
-[MIT](LICENSE)
